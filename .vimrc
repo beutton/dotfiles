@@ -47,5 +47,14 @@ set backspace=indent,eol,start                    " Make backspace work over ind
 " Editing behavior
 set paste            " Enable paste mode for clean pasting
 autocmd FileType python set paste  " Enable paste mode for Python files
+autocmd FileType javascript set paste  " Enable paste mode for Python files
+autocmd FileType html set paste  " Enable paste mode for Python files
 set nowrap           " Disable line wrapping
 set smartcase        " Case-sensitive search if pattern contains uppercase
+
+" Show number of search matches
+set shortmess-=S
+
+" Move left and right
+nnoremap <C-h> 5zh
+nnoremap <C-l> 5zl
